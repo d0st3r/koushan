@@ -1,5 +1,6 @@
+<?xml version="1.0"?>
+<!-- http://www.youtube.com/crossdomain.xml -->
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
 <cross-domain-policy>
-  <site-control permitted-cross-domain-policies="master-only"/>
-  <allow-access-from domain="*" to-ports="*" secure="false"/>
-  <allow-http-request-headers-from domain="*" headers="*" secure="false"/>
+  <allow-access-from domain="*" />
 </cross-domain-policy>
