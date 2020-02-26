@@ -316,7 +316,7 @@
 			// if we've detected an acceptable version
 			// embed the Flash Content SWF when all tests are passed
 			AC_FL_RunContent(
-					"src", "UTReborn.swf?build=release",
+					"src", "koushan.swf?build=release",
 					"FlashVars", rotmg.UrlLib.getProtocolString()+'&version_timestamp=1561028013',
 					"width", "800",
 					"height", "600",
@@ -338,7 +338,39 @@
 		}
 		// -->
 	</script>
-<object width="800" height="600" data="koushan.swf"></object>
+	<noscript>
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+				id="UTReborn" width="640" height="640" class="game_swf"
+				codebase="https://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+			<param name="movie" value="koushan.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#000000" />
+			<param name="wmode" value="direct" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<embed src="koushan.swf" ext="?build=release" quality="high" bgcolor="#000000"
+				width="800" height="600" name="UTReborn" align="middle"
+				   play="true"
+				   loop="false"
+				   quality="high"
+				   allowScriptAccess="sameDomain"
+				   type="application/x-shockwave-flash"
+				   pluginspage="https://www.adobe.com/go/getflashplayer">
+			</embed>
+		</object>
+	</noscript>
+		<a class='close'><span class='close' style='position:absolute; top:0; right:0; cursor: pointer;'> X </span> </a>
+	</div>
+	</div>
+		</div>
+	</div>
+	<p>Thanks for playing UT Realms! Check out the <a href="http://valorproject.wikidot.com/" target="_blank">Valor Wiki</a>
+	<br/>	
+	<p>get the flashplayer link here: <a href="#"><span class="copy-link">https://www.utrealmsreborn.github.io/UTReborn.swf?build=release (Click to Copy)</span></a>
+		<h4 style="margin-top: 0px; margin-bottom: 0px;"> <script type="text/javascript">
+			var d = new Date()
+			document.write(d.getFullYear())
+		<br/>
+	</div>
 </center>
 <script language="JavaScript" type="text/javascript">
 	$("#playButton").click(function(){
