@@ -272,7 +272,97 @@
 		<a href="https://discord.gg/p6uqUBd" target="_blank"><img class="social" src="images/discordicon.png" alt="Discord" /></a>
 	</div>
 <center>
-<object width="800" height="600" data="koushan.swf"></object>
+	<div id="gameplay" class="show">
+	<script language="JavaScript" type="text/javascript">
+		//<!--
+		//rotmg.Marketing.track("landing");
+
+		// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
+		var hasProductInstall = DetectFlashVer(6, 0, 65);
+
+		// Version check based upon the values defined in globals
+		var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+		if ( hasProductInstall && !hasRequestedVersion ) {
+			// DO NOT MODIFY THE FOLLOWING FOUR LINES
+			// Location visited after installation is complete if installation is required
+			var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
+			var MMredirectURL = window.location;
+			// document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+			var MMdoctitle = document.title;
+
+			AC_FL_RunContent(
+					"src", "playerProductInstall",
+					"FlashVars", "MMredirectURL="+MMredirectURL+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle+""+'&version_timestamp=1561028013',
+					"width", "800",
+					"height", "600",
+					"align", "middle",
+					"id", "Koushan",
+					"class", "game_swf",
+					"quality", "high",
+					"bgcolor", "#000000",
+					"name", "Koushan",
+					"allowScriptAccess","sameDomain",
+					"type", "application/x-shockwave-flash",
+					"pluginspage", "https://www.adobe.com/go/getflashplayer"
+			);
+		} else if (hasRequestedVersion) {
+			// if we've detected an acceptable version
+			// embed the Flash Content SWF when all tests are passed
+			AC_FL_RunContent(
+					"src", "koushan.swf?build=release",
+					"FlashVars", rotmg.UrlLib.getProtocolString()+'&version_timestamp=1561028013',
+					"width", "800",
+					"height", "600",
+					"align", "middle",
+					"id", "Koushan",
+					"class", "game_swf",
+					"quality", "high",
+					"bgcolor", "#000000",
+					"name", "Koushan",
+					"allowScriptAccess","sameDomain",
+					"type", "application/x-shockwave-flash",
+					"wmode", "direct",
+					"pluginspage", "https://www.adobe.com/go/getflashplayer",
+					"style", "outline:none"
+			);
+		} else {  // flash is too old or we can't detect the plugin
+			var alternateContent = '<div class="getFlash"><img src="images/UTLogo.png" alt="UT Realms Logo" style="margin-top: -50px; padding: 15px;" /><h2>Playing UT Realms requires Flash!</h2> <h3><a href="https://www.adobe.com/go/getflash/">Get Flash or click here to activate.</a></h3></div>';
+			document.write(alternateContent);  // insert non-flash content
+		}
+		// -->
+	</script>
+	<noscript>
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+				id="Koushan" width="640" height="640" class="game_swf"
+				codebase="https://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+			<param name="movie" value="koushan.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#000000" />
+			<param name="wmode" value="direct" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<embed src="koushan.swf" ext="?build=release" quality="high" bgcolor="#000000"
+				width="800" height="600" name="Koushan" align="middle"
+				   play="true"
+				   loop="false"
+				   quality="high"
+				   allowScriptAccess="sameDomain"
+				   type="application/x-shockwave-flash"
+				   pluginspage="https://www.adobe.com/go/getflashplayer">
+			</embed>
+		</object>
+	</noscript>
+		<a class='close'><span class='close' style='position:absolute; top:0; right:0; cursor: pointer;'> X </span> </a>
+	</div>
+	</div>
+		</div>
+	</div>	
+	<p>get the flashplayer link here: <a href="#"><span class="copy-link">https://www.koushan.net/koushan.swf?build=release (Click to Copy)</span></a>
+		<h4 style="margin-top: 0px; margin-bottom: 0px;"> <script type="text/javascript">
+			var d = new Date()
+			document.write(d.getFullYear())
+		<br/>
+	</div>
 </center>
 <script language="JavaScript" type="text/javascript">
 	$("#playButton").click(function(){
